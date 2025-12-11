@@ -1,0 +1,28 @@
+import random
+import time
+
+print("🔮 Welcome to the Magic Fortune Teller!")
+name = input("What is your name? ")
+
+print("\nShuffling the stars...")
+time.sleep(1.5)
+
+answers = [
+    "You're about to receive good news!",
+    "A big opportunity is coming your way.",
+    "Today is your lucky day.",
+    "Someone secretly admires you.",
+    "You will conquer your fears and win.",
+    "A surprise gift is heading to you soon.",
+    "You will laugh a LOT today!",
+    "You're smarter than you think.",
+    "Your wish will come true soon."
+]
+
+print(f"\nHello {name}, let me predict your future...")
+time.sleep(2)
+
+fortune = random.choice(answers)
+print("\n✨ Your fortune is: ✨")
+print(f"👉 {fortune}")
+print("\nThanks for playing!")
